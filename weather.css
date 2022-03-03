@@ -1,0 +1,102 @@
+*{
+ margin:  0px;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+ body{
+ 	font-family: monospace;
+ 	background-color: lightblue;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	text-align: center;
+    
+ }
+
+
+ .app-wrap{
+ 	background-image: linear-gradient (to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0.6));
+ 	min-height: 100vh;
+ }
+
+
+ main{
+ 	padding: 25px 25px 50px;
+ 	display: flex;
+ 	text-align: center;
+ 	flex-direction: column;
+ 	flex: 1 1 100;
+ 	align-items: center;
+
+
+ }
+
+ header{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	padding: 50px 15px 15px;
+
+ }
+
+ header input{
+ 	width: 100%;
+ 	max-width: 280px;
+ 	padding: 10px 15px;
+ 	border: none;
+ 	background-color: rgba(255, 255, 255, 0.3);
+ 	outline: none;
+ 	color: #313131;
+ 	border-radius: 16px 0px 16px 0px;
+ 	border-bottom: 3px solid orange;
+
+ }
+
+
+ .location .city{
+ 	font-size: 32px;
+ 	color: white;
+ 	font-weight: 32px;
+ }
+
+.current .date{
+    font-size: 16px;
+ 	color: white;
+ }
+
+ .current .temp{
+    font-size: 102px;
+ 	color: white;
+ 	margin: 30px 0px;
+ 	font-weight: 900px;
+ 	text-shadow: 2px 8px rgba(0, 0, 0, 0.5);
+ }
+
+
+ .current .temp span{
+ 	font-weight: 500px;
+ }
+
+ .current .weather{
+ 	font-weight: 32px;
+ 	color: white;
+ 	text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+ 	font-style: italic;
+ 	font-weight: 700px;
+ 	margin-bottom: 15px;
+ 	
+ }
+
+.current .hi-low{
+	font-size: 24px;
+	font-weight: 500px;
+	text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+	color: white;
+
+}
+ 
+
+
+
+
+'${api.base}weather?q=${query}&units=metric&APPID=${api.key}'
